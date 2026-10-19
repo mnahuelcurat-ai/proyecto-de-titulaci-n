@@ -1,0 +1,261 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cadfecfb;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #3c88b7fb;
+    display: flex;
+    align-items: center;
+
+}
+
+.boton-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.boton-navbar a {
+    padding: 7px 18px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #47aae7;
+    color:black;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.boton-navbar a:hover{
+    background-color: #dceeff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(40, 90, 130, 0.10);
+}
+
+.logo-navbar img {
+    height: 45px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.imagen-menu img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Contenedor de las tarjetas */
+.minimarkets-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+    gap: 24px;
+    padding: 20px;
+}
+
+/* Tarjeta individual */
+.card-minimarket {
+    background-color: #ffffff;
+    border: 1px solid #e1eaf2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(40, 90, 130, 0.08);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Efecto al pasar el cursor */
+.card-minimarket:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(40, 90, 130, 0.15);
+}
+
+/* Imagen */
+.img-minimarket {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.img-minimarket img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenido */
+.contenido-minimarket {
+    padding: 18px;
+}
+
+.contenido-minimarket h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #263b50;
+}
+
+.contenido-minimarket p {
+    margin: 0 0 18px;
+    color: #687b8d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Botón */
+.contenido-minimarket a {
+    display: block;
+    padding: 11px 15px;
+    background-color: #2583d8;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.contenido-minimarket a:hover {
+    background-color: #176bb5;
+}
+
+
+/* Sección de categorías */
+.categorias-menu {
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.categorias-menu h2 {
+    margin: 0 0 8px;
+    color: #263b50;
+    font-size: 24px;
+}
+
+.categorias-descripcion {
+    margin: 0 0 22px;
+    color: #687b8d;
+    font-size: 14px;
+}
+
+/* Distribución de botones */
+.categorias-boton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.categorias-boton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #eef6ff;
+    border: 1px solid #deebf8;
+    border-radius: 10px;
+    color: #315775;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.categorias-boton a:hover {
+    background-color: #dceeff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(40, 90, 130, 0.10);
+}
+
+.categorias-boton .categoria-todas {
+    background-color: #ffffff;
+    border: 1px solid #2583d8;
+    color: #2583d8;
+}
+
+.categorias-boton .categoria-todas:hover {
+    background-color: #eef6ff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buscador-navbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d6e2ed;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.buscador-navbar input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #263b50;
+    font-size: 14px;
+}
+
+.buscador-navbar button {
+    padding: 10px 12px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buscador-navbar button:hover {
+    background-color: #eef6ff;
+}
+
+.acciones-navbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.boton-login {
+    padding: 10px 15px;
+    background-color: #2583d8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.boton-login a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.boton-login:hover {
+    background-color: #176bb5;
+}

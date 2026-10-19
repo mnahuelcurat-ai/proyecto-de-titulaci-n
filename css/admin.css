@@ -1,0 +1,152 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #337aad;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.navbar-admin a {
+    text-decoration: none;
+    color: #051e2f;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(112, 156, 185);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navbar-admin a.logout-admin {
+    background-color: #dc3545;
+    color: white;
+    margin-top: auto;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-admin .logout-admin:hover {
+    background-color: #bb2d3b;
+}
+
+.contenido-admin {
+    flex: 1;
+    padding: 30px;
+}
+
+.inicio-admin {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.solicitudes-admin,
+.minimarkets-admin,
+.usuarios-admin {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.minimarket-solicitud img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+.solicitudes-pendientes,
+.solicitudes-rechazadas,
+.solicitudes-aceptadas {
+    flex: 1;
+    min-width: 160px;
+    max-width: 220px;
+    min-height: 140px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.solicitudes-panel h3 {
+    font-size: 15px;
+    margin: 0 0 12px;
+    text-transform: capitalize;
+}
+
+.solicitudes-panel h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.panel-admin {
+    display: flex;
+    min-height: 100vh;
+}
+
+.panel-admin main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-left: 260px;
+    width: calc(100% - 240px);
+}
+
+.solicitudes-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.minimarket-solicitud {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.lista-solicitudes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}

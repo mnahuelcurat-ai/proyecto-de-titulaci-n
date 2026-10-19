@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    color: #333;
+}
+
+.formulario-solicitud {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-solicitud h1 {
+    color: #245c85;
+    margin-top: 0;
+}
+
+.formulario-solicitud p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.formulario-solicitud form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-solicitud label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.formulario-solicitud input,
+.formulario-solicitud select,
+.formulario-solicitud textarea {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formulario-solicitud input:focus,
+.formulario-solicitud select:focus,
+.formulario-solicitud textarea:focus {
+    outline: none;
+    border-color: #3987bd;
+}
+
+.formulario-solicitud button {
+    margin-top: 20px;
+    padding: 13px;
+    background-color: #287bb5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formulario-solicitud button:hover {
+    background-color: #245c85;
+}
+
+.formulario-solicitud > a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #245c85;
+    text-decoration: none;
+}
+
+.formulario-solicitud > a:hover {
+    text-decoration: underline;
+}
